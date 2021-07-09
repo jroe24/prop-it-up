@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import PersonCardComponent from "./components/PersonCard";
 
+//Passing props into each PersonCardComponent
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PersonCardComponent
+        lastName="Doe"
+        firstName="Jane"
+        age={45}
+        hairColor={"Black"}
+      />
+
+      <PersonCardComponent
+        lastName="Smith"
+        firstName="John"
+        age={88}
+        hairColor={"Brown"}
+      />
+
+      <PersonCardComponent
+        lastName="Fillmore"
+        firstName="Millard"
+        age={50}
+        hairColor={"Brown"}
+      />
+
+      <PersonCardComponent
+        lastName="Smith"
+        firstName="Maria"
+        age={62}
+        hairColor={"Brown"}
+      />
     </div>
   );
 }
