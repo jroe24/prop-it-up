@@ -1,33 +1,33 @@
 import React from 'react';
 import './App.css';
-import PersonCardComponent from "./components/PersonCard";
+import PersonCard from "./components/PersonCard";
 
-//Passing props into each PersonCardComponent
+//Passing props into each PersonCard
 function App() {
   return (
     <div className="App">
-      <PersonCardComponent
+      <PersonCard
         lastName="Doe"
         firstName="Jane"
         age={45}
         hairColor={"Black"}
       />
 
-      <PersonCardComponent
+      <PersonCard
         lastName="Smith"
         firstName="John"
         age={88}
         hairColor={"Brown"}
       />
 
-      <PersonCardComponent
+      <PersonCard
         lastName="Fillmore"
         firstName="Millard"
         age={50}
         hairColor={"Brown"}
       />
 
-      <PersonCardComponent
+      <PersonCard
         lastName="Smith"
         firstName="Maria"
         age={62}
